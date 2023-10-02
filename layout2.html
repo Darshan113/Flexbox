@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>holy grail layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header { 
+            background-color: rgb(185, 6, 185);
+            color: white;
+            padding: 8px;
+            height: 72px;
+            display: flex;
+            align-items: center;
+        }
+        header .heading { 
+            font-weight: 600;
+            
+        }
+
+        main{
+            display: flex;
+            flex: 1;
+        }
+
+        main .sidebar { 
+            width: 200px;
+            background-color: blue;
+            color: white;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+
+        ul li { 
+            list-style-type: none;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+        
+        ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 3px 5px;
+        }
+
+        ul li:hover{
+            transform: translate(5px, 3px);
+        }
+
+        main section {
+            flex: 2;        
+            padding: 14px;
+            display: flex;
+            flex-flow: row wrap;
+            height: calc(100vh-72px-72px);
+            overflow: auto;
+        }
+
+        section .box {
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
+            border-radius: 10px;
+            width:  300px;
+            padding: 3px 5px;
+            margin: 4px;
+        }
+
+        footer { 
+            height: 72px;
+            background-color: #eeeeee;
+            color: rgb(175, 4, 175);
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="heading">MY AWESOME WEBSITE</h2>
+    </header>
+     <main>
+       <aside class="sidebar">
+          <ul>
+            <li><a href=""><span>⭐</span></a>Star</li>
+            <li><a href=""><span>⭐</span></a>Star</li>
+            <li><a href=""><span>⭐</span></a>Star</li>
+            <li><a href=""><span>⭐</span></a>Star</li>
+          </ul>
+       </aside>
+       <section class="cards">
+          <div class="box">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate ratione dolor deleniti odit ducimus commodi beatae, voluptatum amet inventore veritatis facere minus sit ipsum aperiam porro ipsa hic reprehenderit repudiandae!
+            </p>
+          </div>
+          <div class="box">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate ratione dolor deleniti odit ducimus commodi beatae, voluptatum amet inventore veritatis facere minus sit ipsum aperiam porro ipsa hic reprehenderit repudiandae!
+            </p>
+          </div>
+          <div class="box">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate ratione dolor deleniti odit ducimus commodi beatae, voluptatum amet inventore veritatis facere minus sit ipsum aperiam porro ipsa hic reprehenderit repudiandae!
+            </p>
+          </div>
+          <div class="box">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate ratione dolor deleniti odit ducimus commodi beatae, voluptatum amet inventore veritatis facere minus sit ipsum aperiam porro ipsa hic reprehenderit repudiandae!
+            </p>
+          </div>
+          <div class="box">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate ratione dolor deleniti odit ducimus commodi beatae, voluptatum amet inventore veritatis facere minus sit ipsum aperiam porro ipsa hic reprehenderit repudiandae!
+            </p>
+          </div>
+          <div class="box">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate ratione dolor deleniti odit ducimus commodi beatae, voluptatum amet inventore veritatis facere minus sit ipsum aperiam porro ipsa hic reprehenderit repudiandae!
+            </p>
+          </div>
+       </section>
+     </main>
+    <footer>
+        <p>Darshan Panchal❤️</p>
+    </footer>
+</body>
+</html>
